@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import logo from "../assets/logo.png";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,7 +23,16 @@ export default function Navbar() {
             isScrolled ? "text-gray-900" : "text-white"
           }`}
         >
-          SkySafe Grills
+           <div className="flex items-center gap-3">
+            <img
+              src={logo}
+              alt="SkySafe Grills Logo"
+              className="h-10 w-10 object-contain border-2  rounded-full"
+            />
+            <h1 className="text-xl font-bold text-white-600">
+              Sahani invisible safety grills
+            </h1>
+          </div>
         </h1>
 
         {/* Menu Links */}
@@ -54,7 +64,7 @@ export default function Navbar() {
 
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/919555471417" // replace with client’s WhatsApp number
+            href="https://wa.me/917385474920" // replace with client’s WhatsApp number
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition"

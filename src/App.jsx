@@ -8,6 +8,7 @@ import grill5 from "./assets/grill5.jpg";
 import grill6 from "./assets/grill6.jpg";
 import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
+import ContactForm from "./components/ContactForm";
 
 const galleryImages = [grill1, grill2, grill3, grill4, grill5, grill6];
 
@@ -83,7 +84,7 @@ function App() {
 
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/919555471417" // replace with client’s WhatsApp number
+            href="https://wa.me/917385474920" // replace with client’s WhatsApp number
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition"
@@ -157,45 +158,11 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 px-6 md:px-20 bg-gray-100 text-center">
-        <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
-        <p className="text-gray-600 mb-6">
-          Get in touch with us for a free consultation or installation estimate.
-        </p>
-        <form
-          className="max-w-md mx-auto bg-white p-6 rounded-xl shadow-md space-y-4"
-          onSubmit={(e) => e.preventDefault()}
-        >
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="w-full border rounded-lg px-4 py-2"
-            required
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="w-full border rounded-lg px-4 py-2"
-            required
-          />
-          <textarea
-            placeholder="Your Message"
-            rows="4"
-            className="w-full border rounded-lg px-4 py-2"
-            required
-          />
-          <button
-            type="submit"
-            className="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition"
-          >
-            Send Message
-          </button>
-        </form>
-      </section>
+      <ContactForm />
 
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/919555471417?text=Hi%20SkySafe%20Grills%2C%20I%27m%20interested%20in%20your%20invisible%20grills."
+        href="https://wa.me/917385474920?text=Hi%20SkySafe%20Grills%2C%20I%27m%20interested%20in%20your%20invisible%20grills."
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition"
